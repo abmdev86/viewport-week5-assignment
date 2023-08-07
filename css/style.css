@@ -48,7 +48,9 @@ body {
 }
 
 .hero-container {
-    display: block;
+    display: flex; /* 2.1 change the display from block to flex for children divs to be flex items */
+    justify-content: center;  
+    align-items: center; 
     background: url('https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?cs=srgb&dl=pexels-luis-gomes-546819.jpg&fm=jpg') center center no-repeat;
     background-size: cover;
     height: 80vh;
@@ -57,11 +59,25 @@ body {
 }
 
 .hero-content {
+    width: 50px;
+    height: 50px;
     width: 100%;
     max-width: 1000px;
     text-align: center;
     padding: 24px;
     margin: 0 auto;
+
+}
+.hero-contact {
+    width: 50px;
+    height: 50px;
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    padding: 24px;
+    margin: 0 auto;
+    color: white;
+
 }
 
 .aboutme-container {
@@ -178,9 +194,9 @@ a:hover, a:active {
     border: 2px solid #333333;
 }
 .hero-content .btn:hover, .hero-content .btn:active {
-    background: #333333;
+    background: #74b44a;
     color: #F1F1F1;
-    border: 2px solid #666666;
+    border: 2px solid #74b44a;
 }
 
 .btn, .btn:visited  {
